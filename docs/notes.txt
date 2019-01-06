@@ -1,0 +1,37 @@
+
+Python project creation:
+    # create project dir
+    mkdir $PYTHON_WORKSPACE/problem
+
+    # create virtualenv for project
+    mkvirtualenv -p python2.7 -a $PYTHON_WORKSPACE/problem problem
+
+    # activate virtualenv workspace
+    workon problem
+
+    # to stop working in virtualenv workspace
+    deactivate
+
+    # after pulling from git (not abs. necessary in this case)
+    pip install -r requirements.txt
+
+
+Procuring a list of words from the internets
+
+    1) get the list of words (assuming you already found a source from github or google):
+
+    curl https://raw.githubusercontent.com/sindresorhus/word-list/master/words.txt > words.txt
+
+    2) the list is in alphabetical order so we need to shuffle it:
+
+    perl -MList::Util=shuffle -e 'print shuffle(<STDIN>);' < words.txt  > words_shuf.txt
+
+    3) there were 274925 words in the downloaded list - we need 110k of those:
+
+    tail -110000  words_shuf.txt  > words_shuf_110k.txt
+
+
+    We end up with the file 'words_shuf_110k.txt' which is unsorted and
+    comprised of 110k words.
+
+    We can now use resultant file as the seed file for our program.

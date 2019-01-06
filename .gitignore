@@ -1,0 +1,59 @@
+###
+#
+# ignores the following file patterns
+#
+###
+#   AWS eb env specific files
+.elasticbeanstalk/*
+#   PyCharm IDE directory/artifacts
+.idea/*
+
+
+#instance config
+instance/
+
+#   bytecode files and/or directories containing them
+__pycache__/
+*.py[cod]
+
+__pycache__/*
+*.pyc
+*.pyo
+build/
+dist/
+
+#instance config
+instance/
+
+##  local shell scripts
+*.sh
+
+##  log files
+*.log
+##  configuration related files
+settings.cfg
+.env
+exports.txt
+
+##  misc temp files
+tmp*
+*.tmp
+
+#   Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+
+# personal directory not for inclusion in source control
+pers_misc/
+
+# exclude misc dir too
+misc/
+
+
+# not including Elements of Programming in Interviews: Python until
+#   I get a bit headway in reading through it
+elemsofprgmgintvws/

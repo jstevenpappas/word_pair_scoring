@@ -1,0 +1,40 @@
+Word Pair Problem
+
+The Basics
+
+Given a list of words, find a pair with the highest score.
+The score is determined by multiplying the lengths of the words by one another.
+For instance:
+[Spoke, Branch] = 30
+   5   *   6    = 30
+
+With the exception that if the words share any letters in common then the pair's score is zero.
+For instance, the following pair yields a score of 0 because both words contain the letter 'r' :
+[Shrink, Branch] = 0
+
+Some Details
+
+Your method should return a single pair of words.
+In the event that multiple pairs tie for the highest score...
+    Any of these pairs is an acceptable answer
+    Pick one and only one, don't return a list of pairs
+Zero, while the lowest possible score, is a valid score
+Your method signatures and return values should match our template
+
+How You'll Be Judged
+
+Performance
+    Achieving the fastest runtime possible should be your primary goal
+        Your solution's runtime against the example list provided (~110K words) is a good benchmark...
+            Good solutions will take less than 0.5 seconds
+            Our in-house solution comes in at ~0.25 seconds
+            NOTE: These runtimes are for your algorithm alone.
+            -->They exclude time spent loading the input data or any other prep/overhead done before or after
+            -->calling your get_highest_scoring_pair() method.
+        Minimizing memory usage is a secondary concern, but still important
+            Not much for suggested numbers here, but keeping it under a gigabyte when running against the supplied 110K words is
+            probably a good idea...
+Code readability
+    Comments are good
+    Self-describing code is better
+    Generally speaking, your code should be easy for another engineer to follow

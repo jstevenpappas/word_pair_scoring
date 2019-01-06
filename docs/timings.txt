@@ -1,0 +1,11 @@
+(problem) jpappas at emptygoat in ~/workspace_python/problem on word_pair_scoring*
+$ time ./main.py
+
+Heya check it out: number of words in list = 110000
+Highest scoring word pair: ethylenediaminetetraacetate boobooks - score=216
+
+real    0m0.183s
+user    0m0.165s
+sys     0m0.017s
+
+$
