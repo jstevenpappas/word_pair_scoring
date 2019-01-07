@@ -8,7 +8,7 @@
 ## Description
 Given a list of words, find a pair with the highest score.
 
-More detailed description in the following file: [a relative link](word_pair_scoring/docs/prob_requirements.txt)
+More detailed description in the following file: [docs/prob_requirements.txt](docs/prob_requirements.txt)
 
 ## Running The App
 ```cd``` to root directory of the repo and run the following at the command line:  
